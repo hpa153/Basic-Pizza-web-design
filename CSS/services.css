@@ -1,0 +1,601 @@
+*{margin: 0px; padding: 0px;}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 200px 30px 200px;
+}
+
+.lienhe{
+    line-height: 15px;
+    height: 100%;
+}
+
+.lienhe a{
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+}
+
+.lienhe a:hover{
+    text-decoration: none;
+    color: #ff9c00;
+}
+
+.lienhe a b{
+    color: black;
+}
+
+.lienhe a:hover b{
+    color: #ff9c00;
+}
+
+.logo{
+    width: 120px;
+    margin: auto;
+}
+
+.header .fa{
+    color: #ff9c00;
+    border: none;
+    padding: 0;
+    margin-right: 0;
+}
+
+.khoiicon{
+    text-align: right;
+}
+
+.khoitren a .fab{
+    color: #414141;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.khoitren a:hover .fab{
+    color: #ff9c00;
+}
+
+a.duoi{
+    width: auto;
+    border-radius: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 11px 20px;
+    color: black;
+    background: #ff9c00;
+    border: 1px solid #ff9c00;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+a.duoi:hover{
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.menutren{
+    width: 60%;
+    height: 65px;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: relative;
+}
+
+@keyframes come{
+    from {top: -65px; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+}
+
+.line{
+    display: inline-flex;
+    position: absolute;
+    top: -65px;
+    opacity: 0;
+    animation: come 1s forwards;
+}
+
+.menutren a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: block;
+    color: black;
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+li:hover a{
+    border-top: 1px solid #ff9c00;
+    color: #ff9c00;
+    text-decoration: none;
+}
+
+.menutren a.now{
+    border-top: 1px solid #ff9c00;
+    color: #ff9c00;
+}
+
+.block1{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    background-image: url(../Images/blog-banner.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.topic{
+    height: 30%;
+}
+
+.block1 h1{
+    font-family: tahoma;
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+.link a{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.link a:hover{
+    color: #ff9c00;
+    text-decoration: none;
+}
+
+.link h5{
+    color: #ff9c00;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: #ff9c00;
+    font-weight: bold;
+}
+
+span{
+    text-transform: uppercase;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.gioithieu img{
+    width: 77px;
+    height: 9px;
+    margin-bottom: 10px;
+}
+
+.trai .service{
+    text-align: right;
+}
+
+.phai .service{
+    text-align: left;
+}
+
+.service .fas{
+    color: #ff9c00;
+    font-size: 20px;
+}
+
+.itemtitle{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mota{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999;
+}
+
+.middle{
+    height: 400px;
+}
+
+img.bigpic{
+    width: 400px;
+    height: 400px;
+}
+
+.monnho{
+    width: 80%;
+    height: 33%;
+    display: block;
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.monnho img{
+    width: 120px;
+    height: 120px;
+}
+
+.monnho p{
+    font-family: 'Lato', sans-serif;
+    color: #414141;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.monnho:hover{
+    border: 2px solid #ff9c00;
+}
+
+.giua{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.monto{
+    width: 100%;
+    display: block;
+    margin: 10px;
+    padding: 15px 0px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.monto img{
+    width: 300px;
+    height: 300px;
+}
+
+.monto p{
+    font-family: 'Lato', sans-serif;
+    color: #414141;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+p.price{
+    color: #ff9c00;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.giua a.duoi{
+    width: 25%;
+    position: relative;
+    right: -37.5%;
+}
+
+.adv{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    background-image: url(../Images/1.png);
+    background-size: cover;
+}
+
+.background{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.buddy1{
+    padding: 0px 200px;
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
+
+.adv h3{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 40px;
+}
+
+.buddy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buddy img{
+    padding: 3px 20px 20px;
+}
+
+.adv p{
+    font-family: tahoma;
+    color: #ff9c00;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.delivery{
+    width: 100%;
+    height: 390px;
+    background-image: url(../Images/delivery-bg.jpg);
+}
+
+.door{
+    padding-top: 100px;
+}
+.door h2{
+    color: white;
+}
+
+.door p{
+    color: white;
+}
+
+.door a.duoi{
+    width: 30%;
+}
+
+.deliverycontact{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.deliverycontact p{
+    font-weight: bold;
+}
+
+.call{
+    display: flex;
+}
+
+span.number{
+    color: #ff9c00;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.box{
+    position: relative;
+}
+
+img.pizzabox{
+    position: absolute;
+    top: 70px;
+}
+
+.gioithieu{
+    text-align: center;
+    padding: 100px;
+    position: relative;
+}
+
+.topright{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.topright img{
+    width: 200px;
+    height: 250px;
+}
+
+.bottomleft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottomleft img{
+    width: 200px;
+    height: 250px;
+}
+
+.process-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.process-item img.step{
+    width: 270px;
+    height: 67px;
+}
+
+.process-item img.connect{
+    width: 181px;
+    height: 12px;
+}
+
+.process-text{
+    width: 170px;
+}
+
+.process-item .process-text p.itemtitle{
+    margin-bottom: 0;
+}
+
+.process-right{
+    text-align: left;
+}
+
+.process-left{
+    text-align: right;
+}
+
+.newsletter{
+    height: 310px;
+    background-image: url(../Images/9.png);
+    background-size: cover;
+    text-align: center;
+}
+
+.newsletter span{
+    color: white;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    margin-top: 0px;
+}
+
+.signup{
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.subscribe{
+    width: 80%;
+    margin: auto;
+    display: inline-block;
+    height: 40px;
+    background: #000;
+    border: none;
+    padding-left: 30px;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.signup a.duoi{
+    width: auto;
+    font-size: 11px;
+    position: relative;
+    right: 40px;
+}
+
+.signup .duoi:hover{
+    background-color: black;
+    border: 1px solid black;
+    color: #ff9c00;
+}
+
+.abous{
+    height: 540px;
+    background-image: url(../Images/8.png);
+    background-size: cover;
+    text-align: left;
+    color: white;
+    line-height: 170%;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.abous .background{
+    height: 540px;
+}
+
+.top{
+    padding: 9.1% 0%;
+}
+
+.description{
+    font-weight: lighter;
+}
+
+.abous .logo{
+    left: 0px;
+    margin: 20px 0px;
+}
+
+.abous a{
+    color: white;
+    text-decoration: none;
+}
+
+.abous a:hover{
+    color: #ff9c00;
+    text-decoration: none;
+}
+
+.abous a.duoi{
+    left: 5%;
+    width: 50%;
+}
+
+.abous .workday{
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.abous a.us{
+    text-transform: capitalize;
+}
+
+.incline{
+    padding-left: 27%;
+}
+
+.abous1 p{
+    margin-bottom: 0;
+}
+
+.abous1 .khoitren i{
+    height: 40px;
+    width: 40px;
+    color: #ff9c00;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.4s;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.abous1 .khoitren i:hover{
+    color: black;
+    background-color: #ff9c00;
+}
+
+.bottom{
+    border-top: 2px solid white;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+a.terms{
+    padding-right: 10px;
+    margin-right: 5px;
+    border-right: 1px solid white;
+}
