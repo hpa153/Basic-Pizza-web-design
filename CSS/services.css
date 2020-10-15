@@ -7,6 +7,36 @@
     padding: 60px 200px 30px 200px;
 }
 
+#hiddenMenu{
+    width: 70%;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    left: -70%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+    display: none;
+}
+
+#hiddenMenu li{
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ff9c00;
+}
+
+#hiddenMenu a{
+    text-transform: uppercase;
+    display: inline;
+    color: #414141;
+    padding: 15px;
+}
+
+.menu-btn{
+    display: none;
+}
+
 .lienhe{
     line-height: 15px;
     height: 100%;
@@ -231,11 +261,19 @@ span{
 img.bigpic{
     width: 400px;
     height: 400px;
+    margin: auto;
+}
+
+.pizza-small{
+    width: 25%;
+}
+
+.pizza-big{
+    width: 50%;
 }
 
 .monnho{
     width: 80%;
-    height: 33%;
     display: block;
     margin: 10px;
     padding: 15px 30px;
@@ -246,13 +284,6 @@ img.bigpic{
 .monnho img{
     width: 120px;
     height: 120px;
-}
-
-.monnho p{
-    font-family: 'Lato', sans-serif;
-    color: #414141;
-    text-transform: uppercase;
-    font-size: 15px;
 }
 
 .monnho:hover{
@@ -294,8 +325,7 @@ p.price{
 
 .giua a.duoi{
     width: 25%;
-    position: relative;
-    right: -37.5%;
+    margin: auto;
 }
 
 .adv{
@@ -350,6 +380,7 @@ p.price{
 .door{
     padding-top: 100px;
 }
+
 .door h2{
     color: white;
 }
@@ -397,7 +428,7 @@ img.pizzabox{
 
 .gioithieu{
     text-align: center;
-    padding: 100px;
+    padding: 40px 25px;
     position: relative;
 }
 
@@ -598,4 +629,230 @@ a.terms{
     padding-right: 10px;
     margin-right: 5px;
     border-right: 1px solid white;
+}
+
+@media (max-width: 575.98px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+
+    #hiddenMenu{
+        width: 70%;
+        position: absolute;
+        background-color: white;
+        z-index: 100;
+        left: -70%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.6s ease-in-out;
+        display: block;
+    }
+
+    #beneath{
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s ease-in-out;
+    }
+
+    #hiddenMenu a.now{
+        border-top: 1px solid #ff9c00;
+        color: #ff9c00;
+    }
+
+    .logo{
+        margin-right: 0px;
+        padding: 25px;
+    }
+
+    .menu-btn{
+        font-size: 25px;
+        padding: 30px;
+        margin: 0px;
+        display: block;
+    }
+
+    .menutren{
+        display: none;
+    }
+    
+    .block1{
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        background-image: url(../Images/blog-banner.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    
+    .pizza-small{
+        width: 45%;
+    }
+    
+    .pizza-big{
+        width: 100%;
+    }
+    
+    .monnho{
+        width: 80%;
+        display: block;
+        margin: 10px;
+        padding: 15px 0px;
+        text-align: center;
+        border: 2px solid white;
+    }
+
+    .giua a.duoi{
+        width: 40%;
+    }
+
+    .trai{
+        order: 1;
+        margin: 2.5%;
+    }
+    
+    .phai{
+        order: 2;
+        margin: 2.5%;
+    }
+
+    .giua{
+        order: 3;
+    }
+    
+    .trai .service{
+        text-align: center;
+    }
+    
+    .phai .service{
+        text-align: center;
+    }
+
+    img.bigpic{
+        width: 330px;
+        height: 330px;
+    }
+
+    .delivery{
+        height: 770px;
+        background-size: cover;
+        margin-bottom: 20%;
+    }
+
+    .deliverycontact{
+        display: block;
+    }
+
+    .deliverycontact p{
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+
+    .door{
+        text-align: center;
+    }
+
+    .door a.duoi{
+        width: 60%;
+        margin: auto;
+    }
+
+    .adv{
+        height: auto;
+    }
+
+    .buddy1{
+        padding: 0%;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+
+    h2.lower{
+        margin-top: 60%;
+    }
+
+    .lowering{
+        margin-bottom: 60%;
+    }
+    
+    .process-item img.step{
+        width: 40%;
+        height: 20%;
+    }
+
+    .process-item img.connect{
+        width: 25%;
+        margin: 0% 2%;
+        height: 12px;
+    }
+
+    .newsletter span{
+        padding-top: 30%;
+        padding-bottom: 5%;
+    }
+
+    .signup{
+        width: 100%;
+    }
+    
+    .subscribe{
+        width: 100%;
+        margin-left: 15px;
+    }
+    
+    .signup a.duoi{
+        width: auto;
+        font-size: 11px;
+        position: relative;
+        right: 20px;
+    }
+
+    .abous{
+        text-align: center;
+        height: auto;
+    }
+
+    .abous .background{
+        height: auto;
+    }
+
+    .abous a.duoi{
+        width: 40%;
+        margin: auto;
+    }
+
+    .creator{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .infoadd{
+        width: 50%;
+        display: flex;
+    }
+
+    .terms{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .policy{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

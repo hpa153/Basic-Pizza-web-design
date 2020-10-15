@@ -1,0 +1,147 @@
+.calculator {
+  width: 464px;
+  margin: auto;
+  background-color: #999898;
+  display: flex;
+  flex-wrap: wrap;
+}
+.calculator .screen {
+  background-color: white;
+  color: black;
+  font-size: 45px;
+  text-align: right;
+  font-family: tahoma;
+  font-weight: 600;
+  width: 454px;
+  height: 150px;
+  margin: 2px;
+  border: 1px solid black;
+}
+.calculator .keyboard {
+  width: 464px;
+  background-color: #999898;
+  display: flex;
+}
+.calculator .keyboard .keyboard-left {
+  background-color: #999898;
+  display: flex;
+  width: 348px;
+  flex-wrap: wrap;
+}
+.calculator .keyboard .keyboard-left .key {
+  font-family: tahoma;
+  font-size: 35px;
+  padding: 15px 5px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  width: 112px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+.calculator .keyboard .keyboard-left .key-0 {
+  font-family: tahoma;
+  font-size: 35px;
+  padding: 15px 5px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  width: 112px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 228px;
+  background-color: white;
+}
+.calculator .keyboard .keyboard-left .key-number {
+  font-family: tahoma;
+  font-size: 35px;
+  padding: 15px 5px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  width: 112px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.calculator .keyboard .keyboard-left .key-C {
+  font-family: tahoma;
+  font-size: 35px;
+  padding: 15px 5px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  width: 112px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
+.calculator .keyboard .keyboard-right {
+  background-color: #999898;
+  display: flex;
+  display: block;
+  width: 104px;
+}
+.calculator .keyboard .keyboard-right .keyPlus {
+  font-family: tahoma;
+  font-size: 35px;
+  padding: 15px 5px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  width: 112px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator .keyboard .keyboard-right .key-C {
+  font-family: tahoma;
+  font-size: 35px;
+  padding: 15px 5px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  width: 112px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+}
+.calculator .keyboard .keyboard-right .key {
+  font-family: tahoma;
+  font-size: 35px;
+  padding: 15px 5px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  margin: 2px;
+  width: 112px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  margin: 4px 2px;
+}

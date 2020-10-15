@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="./Images/12.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza ĐT</title>
@@ -10,9 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="hiddenMenu">
+        <div class="container">
+            <li><a href="FamilyPizza.html">home</a></li>
+            <li><a href="aboutus.html">about us</a></li>
+            <li><a href="menu.html" class="now">menu</a></li>
+            <li><a href="services.html">our services</a></li>
+            <li><a href="blog.html">our blog</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </div>
+    </div>
+    <div id="beneath" onclick="hideDiv()"></div>
     <div class="header">
         <div class="container">
             <div class="row">
+                <span class="menu-btn" onclick="showDiv()">
+                    <i class="fas fa-bars"></i>
+                </span>
                 <div class="d-none d-sm-block lienhe">
                     <p>
                         <i class="fa fa-phone-alt"></i>
@@ -29,7 +44,7 @@
                         </a>
                     </p>
                 </div>
-                    <img src="./Images/logo1.png" alt="" class="logo">
+                <img src="./Images/logo1.png" alt="" class="logo">
                 <div class="d-none d-sm-block khoiicon">
                     <div class="khoitren">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -75,7 +90,7 @@
             </div>
             <div class="pizza slides">
                 <div class="row">
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -89,7 +104,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -103,7 +118,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -117,7 +132,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -131,7 +146,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -145,7 +160,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -159,7 +174,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -173,7 +188,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/12.png" alt="" class="dishimg">
@@ -191,7 +206,7 @@
             </div>
             <div class="pasta slides">
                 <div class="row">
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -205,7 +220,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -219,7 +234,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -233,7 +248,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -247,7 +262,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -261,7 +276,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -275,7 +290,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -289,7 +304,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/14.png" alt="" class="dishimg">
@@ -307,7 +322,7 @@
             </div>
             <div class="salad slides">
                 <div class="row">
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/42.png" alt="" class="dishimg">
@@ -321,7 +336,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/42.png" alt="" class="dishimg">
@@ -335,7 +350,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/42.png" alt="" class="dishimg">
@@ -349,7 +364,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/42.png" alt="" class="dishimg">
@@ -367,7 +382,7 @@
             </div>
             <div class="drink slides">
                 <div class="row">
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/44.png" alt="" class="dishimg">
@@ -381,7 +396,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/44.png" alt="" class="dishimg">
@@ -395,7 +410,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/44.png" alt="" class="dishimg">
@@ -409,7 +424,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/44.png" alt="" class="dishimg">
@@ -423,7 +438,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/44.png" alt="" class="dishimg">
@@ -437,7 +452,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/44.png" alt="" class="dishimg">
@@ -451,7 +466,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-xs-6">
+                    <div class="dish-container">
                         <div class="dish">
                             <a href="" class="link">
                                 <img src="./Images/44.png" alt="" class="dishimg">
@@ -560,10 +575,10 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <p>© Create by Thành Đạt 2018. All Rights Reserved</p>
+                    <p class="creator">© Create by Thành Đạt 2018. All Rights Reserved</p>
                     <div class="infoadd">
                         <a href="" class="terms">Terms & Condtions</a>
-                        <a href="">Privacy Policy</a>
+                        <a href="" class="policy">Privacy Policy</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,97 @@
+@mixin myFont {
+    font-family: tahoma;
+    font-size: 35px;
+    padding: 15px 5px;
+    font-weight: 400;
+    color: black;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+@mixin myBackground {
+    background-color: rgb(153, 152, 152);
+    display: flex;
+}
+
+@mixin myKey {
+    width: 112px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    width: 464px;
+    margin: auto;
+    background-color: rgb(153, 152, 152);
+    display: flex;
+    flex-wrap: wrap;
+    .screen{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 45px;
+        text-align: right;
+        font-family: tahoma;
+        font-weight: 600;
+        width: 454px;
+        height: 150px;
+        margin: 2px;
+        border: 1px solid black;
+    }
+    .keyboard{
+        width: 464px;
+        @include myBackground();
+        .keyboard-left{
+            @include myBackground();
+            width: 348px;
+            flex-wrap: wrap;
+            .key{
+                @include myFont();
+                @include myKey();
+                background-color: gray;
+            }
+            .key-0{
+                @include myFont();
+                @include myKey();
+                width: 228px;
+                background-color: white;
+            }
+            .key-number{
+                @include myFont();
+                @include myKey();
+                background-color: white;
+            }
+            .key-C{
+                @include myFont();
+                @include myKey();
+                background-color: orange;
+            }
+        }
+        .keyboard-right{
+            @include myBackground();
+            display: block;
+            width: 104px;
+            .keyPlus{
+                @include myFont();
+                @include myKey();
+                background-color: gray;
+                height: 160px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .key-C{
+                @include myFont();
+                @include myKey();
+                background-color: orange;
+            }
+            .key{
+                @include myFont();
+                @include myKey();
+                background-color: gray;
+                margin: 4px 2px;
+            }
+        }
+    }
+    
+}
